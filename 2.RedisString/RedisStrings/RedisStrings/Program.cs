@@ -10,7 +10,10 @@ namespace RedisStrings
         static void Main(string[] args)
         {
             var redis = RedisStore.RedisCache;
+
             var key = "testKey";
+
+
 
             if (redis.StringSet(key, "testValue"))
             {
